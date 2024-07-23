@@ -12,5 +12,10 @@
  * @package         E2E-test
  */
 /**
- * No real changes here just a comment to test the current slate of testing
+ * Customer requested the editors no longer can delete their posts
  */
+add_action('init',function (){
+	$editor = get_role('editor');
+	$editor->remove_cap('delete_posts');
+	$editor->remove_cap('delete_published_posts');
+});
