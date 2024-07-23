@@ -19,7 +19,7 @@ describe("Search", ()=>{
 			})
 
 			cy.get('main').as('main')
-			cy.get('@main').find('h1').contains('Results for').should('exist')
+			cy.get('@main').find('h1').contains('results for', {matchCase: false}).should('exist')
 			cy.get('@main').find('h2').contains('Sample Page').should('exist')
 
 
