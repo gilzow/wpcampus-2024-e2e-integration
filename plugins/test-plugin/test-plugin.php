@@ -17,4 +17,5 @@
 add_action('init',function (){
 	$editor = get_role('editor');
 	$editor->remove_cap('delete_posts');
+	$editor->remove_cap('delete_published_posts');
 });
