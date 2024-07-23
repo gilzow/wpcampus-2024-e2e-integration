@@ -7,7 +7,7 @@ describe("Search", ()=>{
 		it("Visits a random page",()=>{
 			cy.request({url: '/foobar', failOnStatusCode: false}).its('status').should('equal', 404)
 			cy.visit('/foobar', {failOnStatusCode: false})
-			cy.get('h1[class="page-title"]').should("exist").contains("Nothing here")
+			cy.get('#page-not-found').should("exist").contains("Page Not Found")
 		})
 
 		it("Runs search from 404", ()=>{
