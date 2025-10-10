@@ -6,7 +6,7 @@ name: app
 
 # The runtime the application uses.
 # Complete list of available runtimes: https://docs.platform.sh/create-apps/app-reference.html#types
-type: 'php:8.1'
+type: 'php:8.3'
 
 # Specifies a default set of build tasks to run. Flavors are language-specific.
 # More information: https://docs.platform.sh/create-apps/app-reference.html#build
@@ -107,7 +107,7 @@ mounts:
         source: local
         source_path: "uploads"
 
-# More information: https://docs.platform.sh/create-apps/app-reference.html#extensions 
+# More information: https://docs.platform.sh/create-apps/app-reference.html#extensions
 runtime:
     extensions:
         - blackfire
